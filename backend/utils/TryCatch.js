@@ -1,4 +1,4 @@
-function TryCatch(handeler) {
+const TryCatch = (handeler) => {
     return async(req, resp, next) => {
         try {
             await handeler(req, resp, next);
